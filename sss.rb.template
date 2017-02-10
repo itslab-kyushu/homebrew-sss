@@ -1,0 +1,31 @@
+#
+# assets/formula.rb
+#
+# Copyright (c) 2016 Junpei Kawamoto
+#
+# This software is released under the MIT License.
+#
+# http://opensource.org/licenses/mit-license.php
+#
+class Sss < Formula
+  desc "An implementation of Shamir's secret sharing"
+  homepage "https://github.com/jkawamoto/sss"
+  version "{{.Version}}"
+
+  if Hardware::CPU.is_64_bit?
+    url "https://github.com/jkawamoto/sss/releases/download/v{{.Version}}/{{.FileName64}}"
+    sha256 "{{.Hash64}}"
+  else
+    url "https://github.com/jkawamoto/sss/releases/download/v{{.Version}}/{{.FileName386}}"
+    sha256 "{{.Hash386}}"
+  end
+
+  def install
+    bin.install "sss"
+  end
+
+  test do
+    system "sss"
+  end
+
+end
