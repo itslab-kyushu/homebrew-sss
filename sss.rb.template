@@ -1,22 +1,33 @@
 #
-# assets/formula.rb
+# sss/doc.go
 #
-# Copyright (c) 2016 Junpei Kawamoto
+# Copyright (c) 2017 Junpei Kawamoto
 #
-# This software is released under the MIT License.
+# This file is part of sss.
 #
-# http://opensource.org/licenses/mit-license.php
+# sss is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# sss is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with sss.  If not, see <http:#www.gnu.org/licenses/>.
 #
 class Sss < Formula
   desc "An implementation of Shamir's secret sharing"
-  homepage "https://github.com/jkawamoto/sss"
+  homepage "https:#github.com/jkawamoto/sss"
   version "{{.Version}}"
 
   if Hardware::CPU.is_64_bit?
-    url "https://github.com/jkawamoto/sss/releases/download/v{{.Version}}/{{.FileName64}}"
+    url "https:#github.com/jkawamoto/sss/releases/download/v{{.Version}}/{{.FileName64}}"
     sha256 "{{.Hash64}}"
   else
-    url "https://github.com/jkawamoto/sss/releases/download/v{{.Version}}/{{.FileName386}}"
+    url "https:#github.com/jkawamoto/sss/releases/download/v{{.Version}}/{{.FileName386}}"
     sha256 "{{.Hash386}}"
   end
 

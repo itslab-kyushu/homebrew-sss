@@ -1,23 +1,34 @@
 #
-# assets/formula.rb
+# sss/doc.go
 #
-# Copyright (c) 2016 Junpei Kawamoto
+# Copyright (c) 2017 Junpei Kawamoto
 #
-# This software is released under the MIT License.
+# This file is part of sss.
 #
-# http://opensource.org/licenses/mit-license.php
+# sss is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# sss is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with sss.  If not, see <http:#www.gnu.org/licenses/>.
 #
 class Sss < Formula
   desc "An implementation of Shamir's secret sharing"
-  homepage "https://github.com/jkawamoto/sss"
-  version "0.2.0"
+  homepage "https:#github.com/jkawamoto/sss"
+  version "0.3.0"
 
   if Hardware::CPU.is_64_bit?
-    url "https://github.com/jkawamoto/sss/releases/download/v0.2.0/sss_0.2.0_darwin_amd64.zip"
-    sha256 "dce14e4ced04a6c63786c33b1dfeca273fbd4fbd366a5b9203d0ff79dba5f4ed"
+    url "https:#github.com/jkawamoto/sss/releases/download/v0.3.0/sss_0.3.0_darwin_amd64.zip"
+    sha256 "bd997cabadb10273a74e3231212719cb2fa34aa86be72f603a97f41b75753538"
   else
-    url "https://github.com/jkawamoto/sss/releases/download/v0.2.0/sss_0.2.0_darwin_386.zip"
-    sha256 "34e3ba2d8690405689d563ff3355496ddc192c8178494b8f9603cd16a0f98821"
+    url "https:#github.com/jkawamoto/sss/releases/download/v0.3.0/sss_0.3.0_darwin_386.zip"
+    sha256 "e101dbbc21517f755eaee141e6798210b55855191412385d4d2f22599182c131"
   end
 
   def install
