@@ -1,5 +1,5 @@
 #
-# sss/doc.go
+# sss.rb
 #
 # Copyright (c) 2017 Junpei Kawamoto
 #
@@ -20,14 +20,14 @@
 #
 class Sss < Formula
   desc "An implementation of Shamir's secret sharing"
-  homepage "https:#github.com/jkawamoto/sss"
+  homepage "https:#github.com/itslab-kyushu/sss"
   version "0.3.0"
 
   if Hardware::CPU.is_64_bit?
-    url "https:#github.com/jkawamoto/sss/releases/download/v0.3.0/sss_0.3.0_darwin_amd64.zip"
+    url "https:#github.com/itslab-kyushu/sss/releases/download/v0.3.0/sss_0.3.0_darwin_amd64.zip"
     sha256 "bd997cabadb10273a74e3231212719cb2fa34aa86be72f603a97f41b75753538"
   else
-    url "https:#github.com/jkawamoto/sss/releases/download/v0.3.0/sss_0.3.0_darwin_386.zip"
+    url "https:#github.com/itslab-kyushu/sss/releases/download/v0.3.0/sss_0.3.0_darwin_386.zip"
     sha256 "e101dbbc21517f755eaee141e6798210b55855191412385d4d2f22599182c131"
   end
 
