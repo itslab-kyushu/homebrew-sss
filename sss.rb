@@ -21,14 +21,14 @@
 class Sss < Formula
   desc "An implementation of Shamir's secret sharing"
   homepage "https:#github.com/itslab-kyushu/sss"
-  version "0.3.1"
+  version "0.3.2"
 
   if Hardware::CPU.is_64_bit?
-    url "https:#github.com/itslab-kyushu/sss/releases/download/v0.3.1/sss_0.3.1_darwin_amd64.zip"
-    sha256 "5f538465d6c12d926aa2a28e3299cfe7b228953253a41c6446adeab286b7b1c6"
+    url "https:#github.com/itslab-kyushu/sss/releases/download/v0.3.2/sss_0.3.2_darwin_amd64.zip"
+    sha256 "8c72e925a667bf56022480684cb3a1844043df91a1b7dede02a894a36b128246"
   else
-    url "https:#github.com/itslab-kyushu/sss/releases/download/v0.3.1/sss_0.3.1_darwin_386.zip"
-    sha256 "5a7659520abd213a2dbdd325b5d11ebf3da3abdc54348effba3ec48e316041af"
+    url "https:#github.com/itslab-kyushu/sss/releases/download/v0.3.2/sss_0.3.2_darwin_386.zip"
+    sha256 "c175df7c3ffbf3bba10549e953693ac9b98d203669aeeae461ae83bca45dbd88"
   end
 
   def install
